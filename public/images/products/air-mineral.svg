@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#65b7e8"/><stop offset=".25" stop-color="#d6f7ff"/><stop offset=".58" stop-color="#fff"/><stop offset=".82" stop-color="#8ed4ef"/><stop offset="1" stop-color="#42a2db"/></linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#168cc5"/><stop offset="1" stop-color="#08649f"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#31566b" flood-opacity=".2"/></filter>
+  </defs>
+  <ellipse cx="120" cy="178" rx="55" ry="9" fill="#392b3b" opacity=".08"/>
+  <g filter="url(#shadow)">
+    <path d="M107 36h26v21c0 8 4 13 11 19 8 8 11 16 11 28v47c0 14-9 23-22 23h-26c-13 0-22-9-22-23v-47c0-12 3-20 11-28 7-6 11-11 11-19z" fill="url(#water)" stroke="#4ca7d1" stroke-width="3"/>
+    <path d="M104 24h32v20h-32z" fill="url(#cap)" stroke="#075e93" stroke-width="2"/>
+    <path d="M90 91q30-11 60 0v40q-30 12-60 0z" fill="#f5fdff" stroke="#aedce9" stroke-width="2"/>
+    <path d="M94 111q25-17 51 0-25 18-51 0" fill="#57b4db"/>
+    <path d="M114 100c-9 8-11 13-4 18 5-5 8-9 4-18" fill="#fff"/>
+    <text x="120" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="800" fill="#2e8db7">AIR MINERAL</text>
+    <path d="M96 68c-5 18-5 48-3 70" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+    <path d="M88 147q32 9 64 0" fill="none" stroke="#5ab5dc" stroke-width="3" opacity=".7"/>
+  </g>
+</svg>

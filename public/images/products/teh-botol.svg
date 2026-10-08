@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b94519"/><stop offset=".24" stop-color="#e78a32"/><stop offset=".55" stop-color="#ffd46b"/><stop offset=".8" stop-color="#df7629"/><stop offset="1" stop-color="#a53d19"/></linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e84b3f"/><stop offset="1" stop-color="#a92235"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#633c27" flood-opacity=".22"/></filter>
+  </defs>
+  <ellipse cx="121" cy="178" rx="59" ry="10" fill="#392b3b" opacity=".09"/>
+  <g filter="url(#shadow)">
+    <path d="M105 27h31v23c0 9 4 14 13 20 8 7 13 16 13 29v53c0 13-10 22-23 22H99c-13 0-23-9-23-22V99c0-13 5-22 13-29 9-6 16-11 16-20z" fill="url(#glass)" stroke="#a94b21" stroke-width="3"/>
+    <path d="M101 22h40v19h-40z" rx="4" fill="url(#cap)" stroke="#a52235" stroke-width="2"/>
+    <path d="M89 84q31-17 72 0v50q-36 15-72 0z" fill="#f8f0dc" stroke="#d9d0bc" stroke-width="2"/>
+    <path d="M89 90q36-14 72 0v10q-36 13-72 0z" fill="#d94435"/>
+    <path d="M98 113c11-14 42-14 54 0-12 15-43 14-54 0" fill="#f1bc4f"/>
+    <text x="125" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="900" fill="#fff">TEH</text>
+    <text x="125" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#a83b28">BOTOL</text>
+    <path d="M94 72c-6 14-7 50-4 77" fill="none" stroke="#ffe7ad" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+  </g>
+</svg>

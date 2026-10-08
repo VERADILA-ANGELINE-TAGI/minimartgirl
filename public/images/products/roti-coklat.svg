@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="wrapper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6c4db"/><stop offset="1" stop-color="#e887b2"/></linearGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd98e"/><stop offset="1" stop-color="#d7913e"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#633c27" flood-opacity=".2"/></filter>
+  </defs>
+  <ellipse cx="120" cy="173" rx="77" ry="10" fill="#392b3b" opacity=".09"/>
+  <g filter="url(#shadow)" transform="rotate(-5 120 100)">
+    <path d="m48 66 19-18 117 3 10 18-4 78-19 9-113-5-13-16z" fill="url(#wrapper)" stroke="#d4689b" stroke-width="3"/>
+    <path d="m60 74 121 3-3 59-116-4z" fill="#fff3e8" stroke="#fff" stroke-width="3"/>
+    <path d="M75 117c-2-19 13-37 34-37h31c22 0 37 17 34 38l-3 12H78z" fill="url(#bread)" stroke="#bd792f" stroke-width="3"/>
+    <path d="M88 116c4-8 15-9 23-4s15 5 22 0 15-4 22 2" fill="none" stroke="#7d402e" stroke-width="7" stroke-linecap="round"/>
+    <path d="m58 74 12-11h102l9 13" fill="none" stroke="#fff" stroke-width="4" opacity=".8"/>
+    <text x="120" y="149" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#9b3e6e">ROTI COKLAT</text>
+    <path d="m49 66-8 4 2 11 8 2m173-15 8 4-2 11-8 2" fill="#f9d8e8" stroke="#d4689b" stroke-width="2"/>
+  </g>
+</svg>

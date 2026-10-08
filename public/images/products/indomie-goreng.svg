@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="pack" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe85c"/><stop offset="1" stop-color="#ffb71b"/></linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e9edf4"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#60412c" flood-opacity=".2"/></filter>
+  </defs>
+  <ellipse cx="121" cy="174" rx="78" ry="12" fill="#392b3b" opacity=".09"/>
+  <g filter="url(#shadow)" transform="rotate(-8 112 99)">
+    <path d="M51 44 70 31l97 4 17 14-7 91-17 13-96-5-14-14z" fill="url(#pack)" stroke="#e49217" stroke-width="3"/>
+    <path d="m58 49 108 1-5 15-103-2z" fill="#ed303e"/>
+    <path d="m58 131 101 5-1 11-98-5z" fill="#ed303e"/>
+    <text x="111" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff">MI INSTAN</text>
+    <text x="111" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="900" font-style="italic" fill="#e52337" stroke="#fff" stroke-width="1.3" paint-order="stroke">MIE</text>
+    <text x="111" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="900" font-style="italic" fill="#e52337" stroke="#fff" stroke-width="1.1" paint-order="stroke">GORENG</text>
+    <path d="M70 116c17-14 59-13 78 0-13 13-63 19-78 0" fill="#fff5dc" stroke="#d48424" stroke-width="2"/>
+    <path d="M77 114q12-13 23 0t22 0q10-12 21 1" fill="none" stroke="#edb52e" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="86" cy="116" r="3" fill="#56a44b"/><circle cx="132" cy="118" r="3" fill="#e94736"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M65 129q53 34 106 0l-10 28q-39 23-82 0z" fill="url(#bowl)" stroke="#d9dce4" stroke-width="3"/>
+    <ellipse cx="118" cy="130" rx="54" ry="14" fill="#fff" stroke="#d9dce4" stroke-width="3"/>
+    <path d="M78 129q13-12 25 0t24 0q13-12 28 0" fill="none" stroke="#f0b92d" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
