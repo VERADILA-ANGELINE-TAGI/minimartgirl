@@ -80,6 +80,16 @@ Route::get('/transaction/{transaction}/receipt', [StrukController::class, 'show'
     ->middleware('auth')
     ->name('transaction.receipt');
 
+/*
+|--------------------------------------------------------------------------
+| DOWNLOAD INVOICE PDF
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/transaction/{transaction}/invoice/pdf', [StrukController::class, 'downloadPdf'])
+    ->middleware('auth')
+    ->name('transaction.invoice.pdf');
+
 Route::get('/transaction/{transaction}/refund', [CashierController::class, 'showRefundForm'])
     ->middleware('auth')
     ->name('transaction.refund.create');

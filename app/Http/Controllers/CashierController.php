@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OrderPlaced;
 use App\Models\Product;
 use App\Models\Refund;
 use App\Models\Transaction;
@@ -559,6 +560,8 @@ class CashierController extends Controller
                 ->route('transaction.create')
                 ->with('success', "Transaksi {$transaction->transaction_code} berhasil ditahan.");
         }
+
+        OrderPlaced::dispatch($transaction);
 
         return redirect()
             ->route('transaction.receipt', $transaction)

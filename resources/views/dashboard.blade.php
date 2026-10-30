@@ -220,9 +220,7 @@
             box-shadow: 0 0 12px rgba(187, 247, 208, .7);
         }
 
-        /* ================================
-           TOMBOL MULAI TRANSAKSI
-           ================================ */
+        /* TOMBOL MULAI TRANSAKSI */
 
         .transaction-button-wrapper {
             display: flex;
@@ -393,6 +391,8 @@
             font-size: .75rem;
             animation: rise-in .65s .25s ease both;
         }
+
+        /* ANIMASI */
 
         @keyframes fade-down {
             from {
@@ -597,6 +597,17 @@
 
 <main class="page-shell">
 
+    <!-- NOTIFIKASI TRANSAKSI REAL-TIME -->
+    <div id="transaction-notification"
+         class="alert alert-success d-none"
+         role="alert"
+         style="border-radius: 14px; margin-bottom: 20px;">
+
+        <strong>Transaksi baru!</strong>
+        <span id="transaction-message"></span>
+
+    </div>
+
     <header class="topbar">
 
         <a class="brand" href="{{ route('dashboard') }}" aria-label="Kembali ke dasbor MINIMARTGIRL">
@@ -662,7 +673,7 @@
             </p>
 
 
-            <!-- TOMBOL TRANSAKSI DITAMBAHKAN DI SINI -->
+            <!-- TOMBOL TRANSAKSI -->
             <div class="transaction-button-wrapper">
 
                 <a href="{{ route('transaction.create') }}"
@@ -753,6 +764,34 @@
     </footer>
 
 </main>
+
+<!-- MEMUAT LARAVEL ECHO DAN REVERB -->
+@vite(['resources/js/app.js'])
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        if (!window.Echo) {
+            console.error('Laravel Echo belum tersedia.');
+            return;
+        }
+
+        window.Echo.private('transactions')
+            .listen('.order.placed', function (event) {
+
+                const notification = document.getElementById('transaction-notification');
+                const message = document.getElementById('transaction-message');
+
+                message.textContent = event.message || 'Transaksi baru berhasil dibuat!';
+
+                notification.classList.remove('d-none');
+
+                console.log('Transaksi baru:', event.transaction);
+
+            });
+
+    });
+</script>
 
 </body>
 </html>
